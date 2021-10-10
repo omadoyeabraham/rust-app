@@ -50,3 +50,27 @@ One can for example use [speculos](https://github.com/LedgerHQ/speculos)
 `cargo run --release` defaults to running speculos on the generated binary with the appropriate flags, if `speculos.py` is in your `PATH`.
 
 There is a small test script that sends some of the available commands in `test/test_cmds.py`, or raw APDUs that can be used with `ledgerctl`.
+
+
+## Setting everything up with docker
+You can also use the provided Dockerfile and docker-compose setup instead of installing all the various dependencies on your local machine. This helps save a lot of time battling dependency issues across various operating systems and system setups.
+
+Follow the steps below to get the app up and running using a docker container:
+
+1. Pull all the dependencies and build the application image using
+   
+    ```
+    docker-compose up --build
+    ```
+
+2. Next, run the following command to create a temporary container off the image, and immediately access the containers command line:
+
+    ```
+    docker-compose run --rm rust_nano_s_app
+    ```
+
+3. As per the documentation above, run the application using:
+
+    ```
+    cargo run --release
+    ```

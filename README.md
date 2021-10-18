@@ -66,7 +66,7 @@ Follow the steps below to get the app up and running using a docker container:
 2. Next, run the following command to create a temporary container off the image, and immediately access the containers command line:
 
     ```
-    docker-compose run --rm rust_nano_s_app
+    docker-compose run --rm --service-ports rust_nano_s_app
     ```
 
 3. As per the documentation above, run the application using:
@@ -74,3 +74,10 @@ Follow the steps below to get the app up and running using a docker container:
     ```
     cargo run --release
     ```
+
+## Accessing the speculos emulator UI
+
+You can access the speculos emulator using a vnc server. Download [VNC Viewer](https://www.realvnc.com/en/connect/download/vnc/) and connect to the vnc server running on [http://localhost:8100](http://localhost:8100)
+
+## Accessing the REST API
+You can access the test REST API used automate actions on the device on [http://localhost:5000](http://localhost:5000) . See [speculos docs](https://developers.ledger.com/docs/speculos/user/api/) for more information on the API specification

@@ -77,7 +77,7 @@ Follow the steps below to get the app up and running using a docker container:
 
 ## Accessing the speculos emulator UI
 
-You can access the speculos emulator using a vnc server. Download [VNC Viewer](https://www.realvnc.com/en/connect/download/vnc/) and connect to the vnc server running on [localhost:8100](http://localhost:8100) 
+You can access the speculos emulator using a vnc server. Download [VNC Viewer](https://www.realvnc.com/en/connect/download/vnc/) and connect to the vnc server using [localhost:8100](http://localhost:8100) 
 
 ## Accessing the REST API
 You can access the test REST API used automate actions on the device on [http://localhost:5000](http://localhost:5000) . See [speculos docs](https://developers.ledger.com/docs/speculos/user/api/) for more information on the API specification
